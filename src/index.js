@@ -4,15 +4,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-const Course = ({ course }) => (
-  <div className="card">
-    <div className="card-body">
-      <div className="card-title">{ getCourseTerm(course) } CS { getCourseNumber(course) }</div>
-      <div className="card-text">{ course.title }</div>
-    </div>
-  </div>
-);
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
